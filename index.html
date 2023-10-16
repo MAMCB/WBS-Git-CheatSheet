@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Cheat Sheet</title>
 </head>
+
 <body>
     <table border="1px">
         <tr>
@@ -13,9 +15,9 @@
         </tr>
         <tr>
             <td>git config --global user.name "Sam Smith"
-            git config --global user.email sam@example.com</td>
+                git config --global user.email sam@example.com</td>
             <td>Configure the author name and email address to be used with your commits.
-            Note that Git strips some characters (for example trailing periods) from user.name.</td>
+                Note that Git strips some characters (for example trailing periods) from user.name.</td>
         </tr>
         <tr>
             <td>git init</td>
@@ -31,7 +33,7 @@
         </tr>
         <tr>
             <td>git add filename
-            
+
                 git add *</td>
             <td>Add one or more files to staging (index):</td>
         </tr>
@@ -53,7 +55,8 @@
         </tr>
         <tr>
             <td>git remote add origin "server"</td>
-            <td>If you haven't connected your local repository to a remote server, add the server to be able to push to it:</td>
+            <td>If you haven't connected your local repository to a remote server, add the server to be able to push to
+                it:</td>
         </tr>
         <tr>
             <td>git remote -v</td>
@@ -101,7 +104,7 @@
                 git diff 'sourcebranch'</td>
             <td>View all the merge conflicts:
                 View the conflicts against the base file:
-                
+
                 Preview changes, before merging:</td>
         </tr>
         <tr>
@@ -114,7 +117,8 @@
         </tr>
         <tr>
             <td>git log</td>
-            <td>CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:</td>
+            <td>CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:
+            </td>
         </tr>
         <tr>
             <td>git push --tags origin</td>
@@ -129,15 +133,16 @@
             <td>git fetch origin <br />
                 git reset --hard origin/master</td>
             <td>Instead, to drop all your local changes and commits, fetch the latest history
-                 from the server and point your local master branch at it, do this:</td>
+                from the server and point your local master branch at it, do this:</td>
         </tr>
         <tr>
             <td>git grep "foo()"</td>
             <td>Search the working directory for foo():</td>
         </tr>
 
-        
-    </body>
-    
+
 </body>
+
+</body>
+
 </html>
