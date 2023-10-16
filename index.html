@@ -6,6 +6,138 @@
     <title>Git Cheat Sheet</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>git config --global user.name "Sam Smith"
+            git config --global user.email sam@example.com</td>
+            <td>Configure the author name and email address to be used with your commits.
+            Note that Git strips some characters (for example trailing periods) from user.name.</td>
+        </tr>
+        <tr>
+            <td>git init</td>
+            <td>Create a new local repository</td>
+        </tr>
+        <tr>
+            <td>git clone /path/to/repository</td>
+            <td>Create a working copy of a local repository:</td>
+        </tr>
+        <tr>
+            <td>git clone username@host:/path/to/repository</td>
+            <td>For a remote server, use:</td>
+        </tr>
+        <tr>
+            <td>git add filename
+            
+                git add *</td>
+            <td>Add one or more files to staging (index):</td>
+        </tr>
+        <tr>
+            <td>git commit -m "Commit message"</td>
+            <td>Commit changes to head (but not yet to the remote repository):</td>
+        </tr>
+        <tr>
+            <td>git commit -a</td>
+            <td>Commit any files you've added with git add, and also commit any files you've changed since then:</td>
+        </tr>
+        <tr>
+            <td>git push origin master</td>
+            <td>Send changes to the master branch of your remote repository:</td>
+        </tr>
+        <tr>
+            <td>git status</td>
+            <td>List the files you've changed and those you still need to add or commit:</td>
+        </tr>
+        <tr>
+            <td>git remote add origin "server"</td>
+            <td>If you haven't connected your local repository to a remote server, add the server to be able to push to it:</td>
+        </tr>
+        <tr>
+            <td>git remote -v</td>
+            <td>List all currently configured remote repositories:</td>
+        </tr>
+        <tr>
+            <td>git checkout -b "branchname"</td>
+            <td>Create a new branch and switch to it:</td>
+        </tr>
+        <tr>
+            <td>git checkout "branchname"</td>
+            <td>Switch from one branch to another:</td>
+        </tr>
+        <tr>
+            <td>git branch</td>
+            <td>List all the branches in your repo, and also tell you what branch you're currently in:</td>
+        </tr>
+        <tr>
+            <td>git branch -d 'branchname'</td>
+            <td>Delete the feature branch:</td>
+        </tr>
+        <tr>
+            <td>git push origin 'branchname'</td>
+            <td>Push the branch to your remote repository, so others can use it:</td>
+        </tr>
+        <tr>
+            <td>git push --all origin</td>
+            <td>Push all branches to your remote repository:</td>
+        </tr>
+        <tr>
+            <td>git push origin :'branchname'</td>
+            <td>Delete a branch on your remote repository:</td>
+        </tr>
+        <tr>
+            <td>git pull</td>
+            <td>Fetch and merge changes on the remote server to your working directory:</td>
+        </tr>
+        <tr>
+            <td>git merge 'branchname'</td>
+            <td>To merge a different branch into your active branch:</td>
+        </tr>
+        <tr>
+            <td>git diff <br />
+                git diff --base 'filename' <br />
+                git diff 'sourcebranch'</td>
+            <td>View all the merge conflicts:
+                View the conflicts against the base file:
+                
+                Preview changes, before merging:</td>
+        </tr>
+        <tr>
+            <td>git add 'filename'</td>
+            <td>After you have manually resolved any conflicts, you mark the changed file:</td>
+        </tr>
+        <tr>
+            <td>git tag 1.0.0 'commitID'</td>
+            <td>You can use tagging to mark a significant changeset, such as a release:</td>
+        </tr>
+        <tr>
+            <td>git log</td>
+            <td>CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:</td>
+        </tr>
+        <tr>
+            <td>git push --tags origin</td>
+            <td>Push all tags to remote repository:</td>
+        </tr>
+        <tr>
+            <td>git checkout -- 'filename'</td>
+            <td>If you mess up, you can replace the changes in your working tree with the last content in head:
+                Changes already added to the index, as well as new files, will be kept.</td>
+        </tr>
+        <tr>
+            <td>git fetch origin <br />
+                git reset --hard origin/master</td>
+            <td>Instead, to drop all your local changes and commits, fetch the latest history
+                 from the server and point your local master branch at it, do this:</td>
+        </tr>
+        <tr>
+            <td>git grep "foo()"</td>
+            <td>Search the working directory for foo():</td>
+        </tr>
+
+        
+    </body>table>
     
 </body>
 </html>
